@@ -1,0 +1,10 @@
+web:
+  build: .
+  command: run
+  ports:
+    - "9000:9000"
+  volumes:
+    - .:/code
+    - .docker_home:/root
+  stdin_open: true
+  tty: true
